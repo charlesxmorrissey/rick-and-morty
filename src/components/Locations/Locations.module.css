@@ -1,0 +1,25 @@
+.locationsWrapper {
+  display: grid;
+  width: 100%;
+}
+
+.locationsHeader {
+  margin: 0 0 var(--space-12);
+}
+
+.locationsCardWrapper {
+  display: grid;
+  grid-gap: var(--space-12);
+  grid-template-columns: repeat(2, 1fr);
+}
+
+@media (min-width: 768px) {
+  .locationsCardWrapper {
+    grid-gap: var(--space-16);
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  }
+
+  .locationsHeader {
+    margin-bottom: var(--space-16);
+  }
+}

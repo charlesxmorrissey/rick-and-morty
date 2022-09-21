@@ -1,0 +1,9 @@
+.layoutPadding {
+  padding: 0 var(--space-16);
+}
+
+@media (min-width: 768px) {
+  .layoutPadding {
+    padding: 0 var(--space-32);
+  }
+}

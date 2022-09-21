@@ -1,0 +1,81 @@
+.detailWrapper {
+  display: grid;
+}
+
+.detailHeader {
+  margin: 0 0 var(--space-12);
+}
+
+.detailHeaderTitle {
+  margin: 0;
+}
+
+.detailCardColumn {
+  margin-bottom: var(--space-16);
+}
+
+.detailCardColumn > div {
+  margin: 0 auto;
+}
+
+.detailForm {
+  display: flex;
+  flex-direction: column;
+}
+
+.detailFormLabel {
+  font-weight: var(--font-weight-semibold);
+  margin-bottom: var(--space-8);
+}
+
+.detailFormInput {
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+  margin-bottom: var(--space-16);
+  min-height: 200px;
+  padding: var(--space-8);
+  resize: vertical;
+}
+
+.detailFormInput:focus {
+  background-color: rgb(0 0 0 / 3%);
+  outline: none;
+}
+
+.detailFormButton {
+  align-items: center;
+  background-color: var(--color-teal);
+  border-radius: 8px;
+  color: var(--color-white);
+  display: flex;
+  font-weight: var(--font-weight-semibold);
+  height: 48px;
+  justify-content: center;
+  padding: var(--space-12);
+  transition: background-color var(--transition--timing-2)
+      var(--transition--ease),
+    color var(--transition--timing-2) var(--transition--ease);
+  will-change: background-color, color;
+}
+
+.detailFormButton:enabled:focus,
+.detailFormButton:enabled:hover {
+  background-color: transparent;
+  border: 1px solid var(--color-teal);
+  color: var(--color-teal);
+}
+
+@media (min-width: 768px) {
+  .detailContentWrapper {
+    display: grid;
+    grid-gap: var(--space-32);
+    grid-template-columns: 1fr 2fr;
+  }
+
+  .detailHeader {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: var(--space-16);
+  }
+}
