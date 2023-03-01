@@ -9,7 +9,7 @@ interface Props {
   residentData: LocationResponse
 }
 
-const Residents: React.FC<Props> = ({ residentData }) => (
+const Residents = ({ residentData }: Props) => (
   <div className={styles.residentsWrapper}>
     <header className={styles.residentsHeader}>
       <h1 className={styles.residentsHeaderTitle}>

@@ -9,7 +9,7 @@ interface Props {
   locationData: LocationResponse[]
 }
 
-const Locations: React.FC<Props> = ({ locationData }) => (
+const Locations = ({ locationData }: Props) => (
   <div className={styles.locationsWrapper}>
     <h1 className={styles.locationsHeader}>Locations</h1>
 

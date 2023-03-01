@@ -13,7 +13,7 @@ interface Props {
   url?: string | null
 }
 
-const Card: React.FC<Props> = ({ image, meta, name, url }) => (
+const Card = ({ image, meta, name, url }: Props) => (
   <div
     className={classNames(styles.card, {
       [styles.cardWithLink]: !!url,

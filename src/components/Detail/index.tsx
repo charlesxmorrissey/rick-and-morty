@@ -16,7 +16,7 @@ interface Note {
   text: string
 }
 
-const Detail: React.FC<Props> = ({ detailData }) => {
+const Detail = ({ detailData }: Props) => {
   const [isSubmitButtonDisabled, setIsSubmitButtonDisabled] =
     useState<boolean>(true)
   const [postValue, setPostValue] = useState<string>('')

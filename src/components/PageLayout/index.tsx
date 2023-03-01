@@ -6,7 +6,7 @@ interface Props {
   children: React.ReactNode
 }
 
-const PageLayout: React.FC<Props> = ({ children }) => (
+const PageLayout = ({ children }: Props) => (
   <main className={styles.pageWrapper}>
     <header className={styles.pageHeader}>
       <Link href='/'>
